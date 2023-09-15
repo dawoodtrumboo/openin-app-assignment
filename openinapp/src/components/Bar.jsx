@@ -28,21 +28,23 @@ const chartdata2 = [
 ];
 
 const dataFormatter = (number) => {
-  return  new Intl.NumberFormat("abcasda").format(number).toString();
+  return  new Intl.NumberFormat("us").format(number).toString();
 };
 
 const Bar = () => (
   <Card>
-    <Title>Activities</Title>
-    <p className="text-[7px] font-montserrat text-[#858585]">Aug - Sept 2023</p>
+    <Title className="text-[18px] font-800">Activities</Title>
+    <p className="text-[7px] lg:text-[14px] font-montserrat text-[#858585]">Aug - Sept 2023</p>
     <BarChart
-      className="mt-6"
+      className="mt-6 "
       data={chartdata2}
       index="name"
       categories={["Guest","User"]}
       colors={["green", "red"]}
       valueFormatter={dataFormatter}
-      yAxisWidth={48}
+      yAxisWidth={28}
+    
+      
       
     />
   </Card>
