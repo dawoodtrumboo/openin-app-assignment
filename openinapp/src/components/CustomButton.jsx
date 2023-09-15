@@ -1,9 +1,9 @@
 import React from 'react'
 
-const CustomButton = (props) => {
+const CustomButton = ({style,name}) => {
   return (
-    <button style={props.style} className='block w-full bg-[#4285F4] font-montserrat font-900 text-white' >
-        Sign In
+    <button style={style} className='block font-montserrat font-900 bg-[#4285F4]' >
+        {name}
     </button>
   )
 }

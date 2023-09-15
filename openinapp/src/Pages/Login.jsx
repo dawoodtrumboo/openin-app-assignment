@@ -38,7 +38,7 @@ const Login = () => {
             </div>
         </div>
         <div className='bg-[#4285F4] h-1/3'>
-            <div className=' flex justify-center items-center gap-10 mx-auto w-full h-full border-2 border-red-600 '>
+            <div className=' flex justify-center items-center gap-10 mx-auto w-full h-full '>
             <FontAwesomeIcon icon={faGithub} size='2x' color='#FFF' />
             <FontAwesomeIcon icon={faLinkedin} size='2x'color='#FFF' />
             <FontAwesomeIcon icon={faSquareTwitter} size='2x' color='#FFF' />

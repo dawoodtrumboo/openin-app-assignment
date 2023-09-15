@@ -1,19 +1,25 @@
 import { Login } from "./Pages";
-import { Route, Routes,useNavigate  } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, } from 'react-router-dom';
 import Dashboard from "./Pages/Dashboard";
 
+function isAuthenticated() {
+  // Return true if the user is authenticated; otherwise, return false
+  return true; // Change this condition accordingly
+}
+
 function App() {
+
+  
   return (
-   <div className=" overflow-x-hidden bg-[#F8FAFF] h-[2000px] font-lato">
-
-  {/* <Login/> */}
-    {/* <Routes>
-      <Route path="/" element = {<Login />} />
-      <Route path="/dashboard" element = {<Dashboard/>} />
-    </Routes> */}
-    <Dashboard />
-
-   </div>
+    <Router>
+      <div className="overflow-x-hidden bg-[#F8FAFF]">
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Navigate to="/login" />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
