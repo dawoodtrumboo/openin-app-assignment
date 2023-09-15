@@ -2,6 +2,7 @@ import React from 'react'
 import { search } from '../assets'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBell, faBars } from '@fortawesome/free-solid-svg-icons'
+import MNavbar from './MNavbar';
 
 const Navbar = () => {
   return (
@@ -17,6 +18,8 @@ const Navbar = () => {
             <img src='#' className='rounded-[50%] bg-black w-[25px] h-[25px] px-5' />
             <FontAwesomeIcon icon={faBars} size='2x' className='pl-4'/>
         </div>
+        <MNavbar />
+        
            {/* Small Device Navbar Ends Here */}
     </div>
   )

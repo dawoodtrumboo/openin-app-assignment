@@ -3,11 +3,13 @@ import CustomButton from './CustomButton'
 
 const LoginCard = () => {
 
-    const style = {
-        paddingTop: '.7rem',  
-        paddingBottom: '.7rem', 
-        borderRadius: '5px',    
-      };
+  const style = {
+    width: '100%',        
+    color: 'white',         
+    paddingTop: '.7rem',
+    paddingBottom: '.7rem',
+    borderRadius: '5px',
+  };
   return (
     <div className='w-full '>
 
@@ -21,7 +23,10 @@ const LoginCard = () => {
             <input type='text' placeholder='Enter you password' className='bg-[#F5F5F5] px-3' style={style}/>
             </div>
             <p className='text-[#4285F4]'>Forget password?</p>
-            <CustomButton style ={style}/>
+            <CustomButton 
+            style ={style}
+            name = {`Sign In`}
+            />
 
         </div>
     </div>
