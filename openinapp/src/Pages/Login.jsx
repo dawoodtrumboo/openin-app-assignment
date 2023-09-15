@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { LoginCard } from '../components'
+import { LoginCard} from '../components'
 import { useNavigate } from 'react-router-dom';
 import {apple,google} from '../assets'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -40,6 +40,7 @@ const Login = ({handleClick}) => {
                     <div className='flex gap-5  items-center bg-white rounded-xl px-8 py-2'>
                         <img src={google} className='w-[20px] h-[20px]'/>
                         <span>Sign in with Google</span>
+                
                     </div>
                     <div className='flex gap-5 items-center bg-white rounded-xl px-8 py-2'>
                         <img src={apple} className='w-[20px] h-[20px]'/>
