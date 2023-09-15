@@ -19,7 +19,7 @@ const Login = ({handleClick}) => {
     <div className='flex flex-col lg:flex-row h-screen max-w-full '>
         <div className='bg-[#4285F4] h-1/3 lg:h-full lg:w-1/2 max-w-full'>
             <div className='w-full lg:h-[70%]  px-10 pt-10 space-y-14'>
-                <span className='font-poppins text-white text-[12px] font-700'>LOGO</span>
+                <span className='font-poppins text-white text-[12px] lg:text-[24px] lg:font-900 font-700'>LOGO</span>
                 <h1 className='w-full m-auto lg:h-[80%] lg:flex lg:justify-center lg:items-center font-monserrat text-[40px] font-900 text-white'>Board.</h1>
             </div>
             <div className='hidden lg:flex justify-center gap-14 mx-auto w-full '>
