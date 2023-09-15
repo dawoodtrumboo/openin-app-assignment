@@ -30,7 +30,7 @@ const Dashboard = () => {
             )} 
             
        <div className='lg:w-full lg:flex lg:justify-between lg:items-center'>
-        <h1 className=' font-montserrat font-900 my-10 text-[20px]'>Dashboard</h1>
+        <h1 className=' font-montserrat font-900 my-1 text-[20px]'>Dashboard</h1>
 
         <div className='hidden lg:flex'>
             <Navbar/>
